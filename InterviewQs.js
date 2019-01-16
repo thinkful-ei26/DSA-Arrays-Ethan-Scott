@@ -79,31 +79,81 @@
 //
 // console.log(merge([1, 3, 6, 8, 11, 12, 14], [2, 3, 5, 8, 9, 10]));
 
-function removeVowels(input) {
-  let str = input;
-  let output = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'o' || str[i] === 'i' || str[i] === 'u') {
-      // str = str.slice(0, i) + str.slice(i + 1, str.length);
-      // console.log(str.slice(0, i));
-      // console.log(str.slice(i + 1, str.length));
-      // console.log(str[i]);
-    } else {
-      output.push(str[i]);
+// function removeVowels(input) {
+//   let str = input;
+//   let output = [];
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === 'a' || str[i] === 'e' || str[i] === 'o' || str[i] === 'i' || str[i] === 'u') {
+//       // str = str.slice(0, i) + str.slice(i + 1, str.length);
+//       // console.log(str.slice(0, i));
+//       // console.log(str.slice(i + 1, str.length));
+//       // console.log(str[i]);
+//     } else {
+//       output.push(str[i]);
+//     }
+
+//   }
+
+//   let outputString = '';
+
+//   for (let i = 0; i < output.length; i++) {
+//     outputString += output[i];
+//   }
+
+//   return outputString;
+// }
+
+// let sentence = 'Baattle of the Vowels: Hawaii vs. Grozny';
+
+
+// console.log(removeVowels(sentence));
+
+// function products(arr){
+//   let resultsArr = [];
+//   for (let i=0; i < arr.length; i++){
+//     let product = 1;
+//     for (let j=0; j < arr.length; j++) {
+//       if (i !== j){
+//         product = product * arr[j];
+//       }
+//     } 
+//     resultsArr.push(product);
+//     // resultsArr.push(
+//     //   (value => {
+//     //   console.log('value is', value);
+//     //   console.log('value index is', arr[i] );
+
+//     //   i !== arr[i];
+//     // }));
+//     // console.log('item is', i);
+//   } return resultsArr;
+// }
+
+// console.log(products([1, 3, 9, 4]));
+
+function TwoDArray(array) {
+  for (let i=0; i < array.length; i++){
+    console.log(array[i]);
+    for (let j=0; j < array[i].length; j++){
+      console.log(array[i][j]);
+      if (array[i][j] === 0) {
+        array[i] = [0,0,0,0,0];
+      }
+      // if (array[i][j] === 0) {
+      //   for (let k=0; k < array.length; k++){
+      //     array[k][j] = 0;
+      //   }
     }
-
   }
-
-  let outputString = '';
-
-  for (let i = 0; i < output.length; i++) {
-    outputString += output[i];
-  }
-
-  return outputString;
+  return array;
 }
 
-let sentence = 'Baattle of the Vowels: Hawaii vs. Grozny';
+const arrayOfArrays = [
+  [1,0,1,1,0],
+  [0,1,1,1,0],
+  [1,1,1,1,1],
+  [1,0,1,1,1],
+  [1,1,1,1,1]
+];
 
-
-console.log(removeVowels(sentence));
+console.log(TwoDArray(arrayOfArrays));
