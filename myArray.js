@@ -81,11 +81,11 @@ function main () {
   Array.SIZE_RATIO = 3;
   let arr = new Array();
 
-  // arr.push(3);
+  arr.push(3);
 
   // console.log(arr._capacity);
 
-  // console.log(arr);
+  console.log(arr);
 
   // What is the length, capacity and memory address of your array?
   // Length is 1, capacity is 3, memory address is 0
@@ -120,31 +120,31 @@ function main () {
   // Length is 3, capacity is 12, memory address is 3
 
 
-  arr.push(3);
-  arr.push(5);
-  arr.push(15);
-  arr.push(19);
-  arr.push(45);
-  arr.push(10);
+  // arr.push(3);
+  // arr.push(5);
+  // arr.push(15);
+  // arr.push(19);
+  // arr.push(45);
+  // arr.push(10);
 
-  arr.pop();
-  arr.pop();
-  arr.pop();
+  // arr.pop();
+  // arr.pop();
+  // arr.pop();
 
-  console.log(arr.get(1));
+  // console.log(arr.get(1));
 
-  arr.remove(0);
-  arr.remove(0);
-  arr.remove(0);
+  // arr.remove(0);
+  // arr.remove(0);
+  // arr.remove(0);
 
-  arr.push('tauhida');
+  // arr.push('tauhida');
 
-  console.log(arr.get(0));
+  // console.log(arr.get(0));
 
-  // Print this one item that you just added. What is the result? Can you explain your result?
-  // It's a Float64Array, which will only print 64 bit floating numbers. Tauhida is not a number
+  // // Print this one item that you just added. What is the result? Can you explain your result?
+  // // It's a Float64Array, which will only print 64 bit floating numbers. Tauhida is not a number
 
-  console.log(arr);
+  // console.log(arr);
 
 }
 
