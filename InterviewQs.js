@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 //
 // function replaceSpace(str) {
 //   let arr = str.split('');
@@ -81,19 +81,29 @@
 
 function removeVowels(input) {
   let str = input;
+  let output = [];
   for (let i = 0; i < str.length; i++) {
     if (str[i] === 'a' || str[i] === 'e' || str[i] === 'o' || str[i] === 'i' || str[i] === 'u') {
-      str = str.slice(0, i) + str.slice(i + 1, str.length);
-      console.log(str.slice(0, i));
-      console.log(str.slice(i + 1, str.length));
-      console.log(str[i]);
+      // str = str.slice(0, i) + str.slice(i + 1, str.length);
+      // console.log(str.slice(0, i));
+      // console.log(str.slice(i + 1, str.length));
+      // console.log(str[i]);
+    } else {
+      output.push(str[i]);
     }
 
   }
-  return str;
+
+  let outputString = '';
+
+  for (let i = 0; i < output.length; i++) {
+    outputString += output[i];
+  }
+
+  return outputString;
 }
 
-let sentence = "Baattle of the Vowels: Hawaii vs. Grozny";
+let sentence = 'Baattle of the Vowels: Hawaii vs. Grozny';
 
 
 console.log(removeVowels(sentence));
